@@ -15,7 +15,11 @@
         <!-- Task Entry and Add Button -->
     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20,0">
         <Entry x:Name="TaskEntry" Placeholder="Enter task" HorizontalOptions="FillAndExpand"/>
-        <Button Text="Add"  Clicked="OnAddTaskClicked"  HorizontalOptions="End"/>
+
+
+        <Button Text="Add Task"  Clicked="OnAddTaskClicked"  HorizontalOptions="End">
+
+</Button>
     </StackLayout>
 
       <!-- Task List -->
@@ -23,7 +27,7 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0">
                         <Label Text="{Binding TaskName}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
                         <Button Text="Complete" Clicked="OnCompleteTaskClicked" CommandParameter="{Binding .}" HorizontalOptions="End"/>
                     </StackLayout>
