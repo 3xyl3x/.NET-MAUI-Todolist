@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp13.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <!-- Title Label -->
+    <Label Text="To-Do List" FontSize="24" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="0,20,0,10"/>
+        <!-- Task Entry and Add Button -->
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="20,0">
+        <Entry x:Name="TaskEntry" Placeholder="Enter task" HorizontalOptions="FillAndExpand"/>
+        <Button Text="Add"  Clicked="OnAddTaskClicked"  HorizontalOptions="End"/>
+    </StackLayout>
+
+      <!-- Task List -->
+    <ListView x:Name="TaskListView" Margin="20,0">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                        <Label Text="{Binding TaskName}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                        <Button Text="Complete" Clicked="OnCompleteTaskClicked" CommandParameter="{Binding .}" HorizontalOptions="End"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
