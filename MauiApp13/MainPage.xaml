@@ -30,6 +30,7 @@
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0">
                         <Label Text="{Binding TaskName}" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
                         <Button Text="Complete" Clicked="OnCompleteTaskClicked" CommandParameter="{Binding .}" HorizontalOptions="End"/>
+                         <Button Text="★2"  Clicked="OnStarTaskClicked" CommandParameter="{Binding .}" HorizontalOptions="End"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

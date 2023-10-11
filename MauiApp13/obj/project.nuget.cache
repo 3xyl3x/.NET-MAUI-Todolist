@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "964Exn6ZgavnRfyDmYmyyJil6jhJIg6PypaMDpzvcSQt8xmwbO0xzzdYBip40p4gKL0U3qAJQO5EIVBs6LtziQ==",
+  "dgSpecHash": "wCAAUS1CDZ4QlcLvsNEhR65Z0brsaZyXncpy2M9WddOh8w+zXVR0uCB5XuUY6Muqf1qsrzTYKFLNKOdgoShVrQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\david\\OneDrive\\Skrivbord\\Programmering\\maui3\\MauiApp13\\MauiApp13.csproj",
+  "projectFilePath": "C:\\Users\\david\\OneDrive\\Skrivbord\\Programmering\\maui3\\MauiApp13\\MauiApp13.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
